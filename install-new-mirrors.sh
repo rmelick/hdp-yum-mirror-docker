@@ -23,5 +23,5 @@ reposync -r HDP-${HDP_VERSION}
 reposync -r HDP-UTILS-${HDP_UTILS_VERSION}
 
 cd ${MIRROR_DIR}
-createrepo .
+createrepo --update .
 
