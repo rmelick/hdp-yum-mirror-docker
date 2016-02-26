@@ -12,10 +12,7 @@ RUN apt-get update && apt-get clean all && apt-get -y install \
     wget
 
 RUN touch /etc/yum.conf
-    
-WORKDIR /etc/yum/repos.d
-RUN wget http://public-repo-1.hortonworks.com/HDP/centos7/2.x/updates/$HDP_VERSION/hdp.repo
-RUN yum-config-manager --add-repo http://public-repo-1.hortonworks.com/ambari/centos7/2.x/updates/$AMBARI_VERSION/ambari.repo
+COPY blank.repo /etc/yum.repos.d/
 
 COPY hdp-clones.repo /tmp/
 RUN mkdir -p /usr/local/apache2/htdocs/mirrors/

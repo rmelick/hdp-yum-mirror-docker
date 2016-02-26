@@ -1,0 +1,3 @@
+[blank-repo]
+name = Empty repo file so that yum can initialize correctly by pulling baseurl
+baseurl = http://www.example.com
