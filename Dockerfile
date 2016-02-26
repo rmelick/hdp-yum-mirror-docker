@@ -32,7 +32,7 @@ RUN createrepo /usr/local/apache2/htdocs/ambari/centos7/Updates-ambari-$AMBARI_V
 RUN createrepo /usr/local/apache2/htdocs/hdp/centos7/HDP-$HDP_VERSION
 RUN createrepo /usr/local/apache2/htdocs/hdp/centos7/HDP-UTILS-$HDP_UTILS_VERSION
 
-
+WORKDIR /
 COPY hdp-clones.repo /tmp/
 
 RUN sed -e "s/FQDN/$FQDN/g" /tmp/hdp-clones.repo | \
