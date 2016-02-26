@@ -1,0 +1,3 @@
+[ambari-clone]
+name = Local clone of Ambari 2.x
+baseurl = http://FQDN/ambari/centos7/Updates-ambari-2.2.0.0/

@@ -1,0 +1,3 @@
+[hdp-utils-clone]
+name = Clone of HDP Utils
+baseurl = http://FQDN/hdp/centos7/HDP-UTILS-1.1.0.20/
