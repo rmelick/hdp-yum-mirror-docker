@@ -1,0 +1,12 @@
+[hdp-clone]
+name = Clone of HDP 2.x
+baseurl = http://FQDN/hdp/centos7/HDP-HDP_VERSION/
+
+[hdp-utils-clone]
+name = Clone of HDP Utils
+baseurl = http://FQDN/hdp/centos7/HDP-UTILS-HDP_UTILS_VERSION/
+
+
+[ambari-clone]
+name = Clone of Ambari 2.x
+baseurl = http://FQDN/ambari/centos7/Updates-ambari-AMBARI_VERSION/
